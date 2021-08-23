@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.0.0.31" author="LAPTOP-GTP4U7EO\larsf" />
+  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.1.0.3" author="LAPTOP-GTP4U7EO\larsf" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -3149,21 +3149,21 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' ) and (flow.59c9b5f1-2838-44ba-8a96-de535d2ef871 is 'Yes'  or  flow.e72aa008-3050-4787-8f05-b1b877679b5b is 'Yes' ) and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>(target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' ) and (flow.59c9b5f1-2838-44ba-8a96-de535d2ef871 is 'Yes' ) and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
         <Exclude>target is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or flow.383903e6-fbec-4ce5-b06b-176ad47d9cfb is 'Yes'</Exclude>
       </GenerationFilters>
       <Id>3a75a18b-6b5f-4f0d-b5dd-fa26eca70936</Id>
-      <ShortTitle>TCP-SYN or UDP flooding</ShortTitle>
+      <ShortTitle>TCP-SYN flooding</ShortTitle>
       <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to make the {target.Name} unavailable through a TCP-SYN or UDP flooding type of attack.</Description>
+      <Description>An attacker may attempt to make the {target.Name} unavailable through a TCP-SYN flooding type of attack.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to make the {target.Name} unavailable through a TCP-SYN or UDP flooding type of attack.</Value>
+            <Value>An attacker may attempt to make the {target.Name} unavailable through a TCP-SYN flooding type of attack.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -3277,21 +3277,21 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow.d519816f-8c85-4c0d-b200-f0fa3abeffe4 is 'Yes' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>(target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow.d519816f-8c85-4c0d-b200-f0fa3abeffe4 is 'Yes'  or  flow.e72aa008-3050-4787-8f05-b1b877679b5b is 'Yes' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
         <Exclude />
       </GenerationFilters>
       <Id>3e654c5b-0005-4493-80ed-7172e49bf9a1</Id>
-      <ShortTitle>IP flooding</ShortTitle>
+      <ShortTitle>IP or UDP flooding</ShortTitle>
       <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to deny the service of the {target.Name} by flooding it with IP packets.</Description>
+      <Description>An attacker may attempt to deny the service of the {target.Name} by flooding it with IP or UDP packets.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to deny the service of the {target.Name} by flooding it with IP packets.</Value>
+            <Value>An attacker may attempt to deny the service of the {target.Name} by flooding it with IP or UDP packets.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
