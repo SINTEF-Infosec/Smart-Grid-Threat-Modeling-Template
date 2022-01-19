@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.1.0.3" author="LAPTOP-GTP4U7EO\larsf" />
+  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.2.0.1" author="LAPTOP-GTP4U7EO\larsf" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -72,43 +72,38 @@
         <AttributeType>1</AttributeType>
       </ThreatMetaDatum>
       <ThreatMetaDatum>
-        <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-        <Label>Loss of power</Label>
+        <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+        <Label>Impact</Label>
         <HideFromUI>false</HideFromUI>
         <Values>
-          <Value>Select</Value>
-          <Value>Immediate blackout</Value>
-          <Value>May lead to future blackout</Value>
-          <Value>No theat to power availability</Value>
-        </Values>
-        <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-        <AttributeType>1</AttributeType>
-      </ThreatMetaDatum>
-      <ThreatMetaDatum>
-        <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-        <Label>Difficulties of implementing mitigation</Label>
-        <HideFromUI>false</HideFromUI>
-        <Values>
-          <Value>Select</Value>
           <Value>Low</Value>
           <Value>Medium</Value>
           <Value>High</Value>
         </Values>
-        <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
+        <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
         <AttributeType>1</AttributeType>
       </ThreatMetaDatum>
       <ThreatMetaDatum>
-        <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-        <Label>Affected System</Label>
+        <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+        <Label>Probability</Label>
         <HideFromUI>false</HideFromUI>
         <Values>
-          <Value>Select</Value>
-          <Value>Both IT and OT</Value>
-          <Value>IT</Value>
-          <Value>OT</Value>
+          <Value>Low</Value>
+          <Value>Medium</Value>
+          <Value>High</Value>
         </Values>
-        <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+        <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
         <AttributeType>1</AttributeType>
+      </ThreatMetaDatum>
+      <ThreatMetaDatum>
+        <Name>b8a4702f-3e42-4410-8142-7a6cb0e5dac5</Name>
+        <Label>Possible mitigation</Label>
+        <HideFromUI>false</HideFromUI>
+        <Values>
+          <Value />
+        </Values>
+        <Id>b8a4702f-3e42-4410-8142-7a6cb0e5dac5</Id>
+        <AttributeType>0</AttributeType>
       </ThreatMetaDatum>
     </PropertiesMetaData>
   </ThreatMetaData>
@@ -143,6 +138,20 @@
           <IsInherited>false</IsInherited>
           <Name>aa7975a6-bc55-419f-871d-f1b49a4a4ca4</Name>
           <DisplayName>Logs process actions</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Select</Value>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>71a33704-8514-42e6-8ea2-87a9aea030e8</Id>
+          <IsInherited>false</IsInherited>
+          <Name>38465792-0985-4d82-9aef-70dff19433e9</Name>
+          <DisplayName>Logs process communication</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -199,6 +208,20 @@
           <IsInherited>false</IsInherited>
           <Name>99626ec9-11ef-45e9-869b-f317ad42058f</Name>
           <DisplayName>Stores credential</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Select</Value>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>f9286f14-c9bf-4748-9ba7-01cc666ee70e</Id>
+          <IsInherited>false</IsInherited>
+          <Name>90c6a476-9306-43b7-aa97-851a8a452077</Name>
+          <DisplayName>Physical component</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -648,20 +671,7 @@
       <Representation>Ellipse</Representation>
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
-      <Attributes>
-        <Attribute>
-          <Id>d0d84651-20d4-4cbb-a3d6-827eede590e4</Id>
-          <IsInherited>false</IsInherited>
-          <Name>7ea491c5-59b4-4788-98a5-6d19b0448801</Name>
-          <DisplayName>test</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>yes</Value>
-          </AttributeValues>
-        </Attribute>
-      </Attributes>
+      <Attributes />
       <StencilConstraints>
         <StencilConstraint>
           <SelectedStencilType>Any</SelectedStencilType>
@@ -733,23 +743,7 @@
       <Representation>Ellipse</Representation>
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
-      <Attributes>
-        <Attribute>
-          <Id>e05c7696-daae-4f66-baaf-57d6eac935c9</Id>
-          <IsInherited>false</IsInherited>
-          <Name>45c839e4-8890-4681-9ce9-00393bb3f15d</Name>
-          <DisplayName>IoT Cloud gateway technologies</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Generic</Value>
-            <Value>NodeJs</Value>
-            <Value>CSharp</Value>
-          </AttributeValues>
-        </Attribute>
-      </Attributes>
+      <Attributes />
       <StencilConstraints>
         <StencilConstraint>
           <SelectedStencilType>Any</SelectedStencilType>
@@ -876,7 +870,7 @@
           <IsInherited>true</IsInherited>
           <Name>fbf3cbf8-6a7d-4dbb-9664-4b7900e30074</Name>
           <DisplayName>Encrypted</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -888,7 +882,7 @@
           <IsInherited>true</IsInherited>
           <Name>261c742e-c187-4b1c-a8c6-91ffb8b189c9</Name>
           <DisplayName>Integrity Protected</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -900,7 +894,7 @@
           <IsInherited>true</IsInherited>
           <Name>1788b37b-42c7-4ae5-8cd8-d01b866ac2f0</Name>
           <DisplayName>Authenticated</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -912,7 +906,7 @@
           <IsInherited>true</IsInherited>
           <Name>edb23fc2-fcf4-4d19-9d12-71887aa3beda</Name>
           <DisplayName>Repudiation Protected</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -924,7 +918,7 @@
           <IsInherited>true</IsInherited>
           <Name>d78e4115-1d3c-48d6-acb3-7f2128191d25</Name>
           <DisplayName>Replay Protected</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -936,7 +930,7 @@
           <IsInherited>true</IsInherited>
           <Name>34be12a6-828c-45f4-8260-64544e739e7c</Name>
           <DisplayName>Supports older cryptographic protocols</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -948,7 +942,7 @@
           <IsInherited>true</IsInherited>
           <Name>2c7148dc-7746-47ac-8c87-8ada92e3f635</Name>
           <DisplayName>Data or Command&amp;Code</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -960,7 +954,7 @@
           <IsInherited>true</IsInherited>
           <Name>099fa6e4-a7cb-471f-996c-17f0d5d68e18</Name>
           <DisplayName>Transmits credentials</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -972,7 +966,7 @@
           <IsInherited>true</IsInherited>
           <Name>ef8e305b-eaca-4d0d-a14d-4cc8e7d356ac</Name>
           <DisplayName>Remote update of software or firmware</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -984,7 +978,7 @@
           <IsInherited>true</IsInherited>
           <Name>59c9b5f1-2838-44ba-8a96-de535d2ef871</Name>
           <DisplayName>TCP</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -996,7 +990,7 @@
           <IsInherited>true</IsInherited>
           <Name>e72aa008-3050-4787-8f05-b1b877679b5b</Name>
           <DisplayName>UDP</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -1008,7 +1002,7 @@
           <IsInherited>true</IsInherited>
           <Name>d519816f-8c85-4c0d-b200-f0fa3abeffe4</Name>
           <DisplayName>IP</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -1020,7 +1014,7 @@
           <IsInherited>true</IsInherited>
           <Name>383903e6-fbec-4ce5-b06b-176ad47d9cfb</Name>
           <DisplayName>IPsec</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -1032,175 +1026,7 @@
           <IsInherited>true</IsInherited>
           <Name>f9ad816a-800e-439b-9930-4e01840429f3</Name>
           <DisplayName>ARP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>f95c26a3-b373-4398-a892-3a0d9ce95e6a</Id>
-          <IsInherited>true</IsInherited>
-          <Name>fbf3cbf8-6a7d-4dbb-9664-4b7900e30074</Name>
-          <DisplayName>Encrypted</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>077cd932-a4b9-466d-9d9e-5901b42bf38a</Id>
-          <IsInherited>true</IsInherited>
-          <Name>261c742e-c187-4b1c-a8c6-91ffb8b189c9</Name>
-          <DisplayName>Integrity Protected</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>ecf6f0d0-6283-4bd3-8228-ac680753436f</Id>
-          <IsInherited>true</IsInherited>
-          <Name>1788b37b-42c7-4ae5-8cd8-d01b866ac2f0</Name>
-          <DisplayName>Authenticated</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>23c0200c-f10f-4dd2-9025-6ce742cdd470</Id>
-          <IsInherited>true</IsInherited>
-          <Name>edb23fc2-fcf4-4d19-9d12-71887aa3beda</Name>
-          <DisplayName>Repudiation Protected</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>01fe6ea2-5b45-4186-bba0-f270e1adeb45</Id>
-          <IsInherited>true</IsInherited>
-          <Name>d78e4115-1d3c-48d6-acb3-7f2128191d25</Name>
-          <DisplayName>Replay Protected</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>495754b0-f017-4768-a4be-2d2ad5eb90be</Id>
-          <IsInherited>true</IsInherited>
-          <Name>34be12a6-828c-45f4-8260-64544e739e7c</Name>
-          <DisplayName>Supports older cryptographic protocols</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5841eb7c-7610-471c-bdda-1ae9d768930c</Id>
-          <IsInherited>true</IsInherited>
-          <Name>2c7148dc-7746-47ac-8c87-8ada92e3f635</Name>
-          <DisplayName>Data or Command&amp;Code</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Data</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>a6b6d304-d1e6-4cdf-a7f2-2df16463ce11</Id>
-          <IsInherited>true</IsInherited>
-          <Name>099fa6e4-a7cb-471f-996c-17f0d5d68e18</Name>
-          <DisplayName>Transmits credentials</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5944d3c9-3e5f-4edb-988c-16565b73a836</Id>
-          <IsInherited>true</IsInherited>
-          <Name>ef8e305b-eaca-4d0d-a14d-4cc8e7d356ac</Name>
-          <DisplayName>Remote update of software or firmware</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>6300f4e7-fecc-4f9f-9afd-1696fe4cf5b0</Id>
-          <IsInherited>true</IsInherited>
-          <Name>59c9b5f1-2838-44ba-8a96-de535d2ef871</Name>
-          <DisplayName>TCP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Yes</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>746109b4-57ef-4b64-8529-657f2709b904</Id>
-          <IsInherited>true</IsInherited>
-          <Name>e72aa008-3050-4787-8f05-b1b877679b5b</Name>
-          <DisplayName>UDP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>04ffac23-1549-486a-b3f3-8daf85b3b5a6</Id>
-          <IsInherited>true</IsInherited>
-          <Name>d519816f-8c85-4c0d-b200-f0fa3abeffe4</Name>
-          <DisplayName>IP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Yes</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5056fafe-5951-45b4-ba65-bbee88de197f</Id>
-          <IsInherited>true</IsInherited>
-          <Name>383903e6-fbec-4ce5-b06b-176ad47d9cfb</Name>
-          <DisplayName>IPsec</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>c4633b57-32f1-45af-bcff-6128d56fc0c5</Id>
-          <IsInherited>true</IsInherited>
-          <Name>f9ad816a-800e-439b-9930-4e01840429f3</Name>
-          <DisplayName>ARP</DisplayName>
-          <Mode>Dynamic</Mode>
+          <Mode>Static</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
@@ -1220,6 +1046,12 @@
     <ThreatCategory>
       <Name>Spoofing</Name>
       <Id>66d93b58-6d13-4431-aa06-65906cc551f0</Id>
+      <ShortDescription />
+      <LongDescription />
+    </ThreatCategory>
+    <ThreatCategory>
+      <Name>Physical</Name>
+      <Id>e1e178eb-7465-4bfe-bce8-a9d4a6bf58d7</Id>
       <ShortDescription />
       <LongDescription />
     </ThreatCategory>
@@ -1250,6 +1082,12 @@
     <ThreatCategory>
       <Name>Elevation of Privilege</Name>
       <Id>555172d8-70fc-42bb-9485-01cab71685b3</Id>
+      <ShortDescription />
+      <LongDescription />
+    </ThreatCategory>
+    <ThreatCategory>
+      <Name>Unauthorized Access</Name>
+      <Id>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Id>
       <ShortDescription />
       <LongDescription />
     </ThreatCategory>
@@ -1288,33 +1126,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Select</Value>
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1362,33 +1190,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Select</Value>
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1436,33 +1254,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Select</Value>
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1510,33 +1318,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1584,33 +1382,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Select</Value>
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1648,33 +1436,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Select</Value>
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1712,33 +1490,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Select</Value>
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1776,33 +1544,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Select</Value>
+            <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Select</Value>
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1840,33 +1598,77 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' and target.90c6a476-9306-43b7-aa97-851a8a452077 is 'Yes' and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>22c94b6f-783b-43e9-98c8-10759685bfd9</Id>
+      <ShortTitle>Physical tampering</ShortTitle>
+      <Category>e1e178eb-7465-4bfe-bce8-a9d4a6bf58d7</Category>
+      <RelatedCategory />
+      <Description>An attacker with access to the {target.Name} may attempt to tamper or destroy it. </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker with access to the {target.Name} may attempt to tamper or destroy it. </Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1904,33 +1706,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -1968,33 +1760,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2032,33 +1814,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2106,171 +1878,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.edb23fc2-fcf4-4d19-9d12-71887aa3beda is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>be138c66-793b-4c0a-b4ef-593e166164fa</Id>
-      <ShortTitle>Repudiation of received data</ShortTitle>
-      <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
-      <RelatedCategory />
-      <Description>The {target.Name} may deny having received a message.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>The {target.Name} may deny having received a message.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' )and (flow is 'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.edb23fc2-fcf4-4d19-9d12-71887aa3beda is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>01c92c56-3314-42dd-bce5-f6424bbdcf98</Id>
-      <ShortTitle>Repudiation of sent data</ShortTitle>
-      <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
-      <RelatedCategory />
-      <Description>The {source.Name} may deny having sent a message.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>The {source.Name} may deny having sent a message.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2318,33 +1942,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2392,33 +2006,131 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude>source.38465792-0985-4d82-9aef-70dff19433e9 is 'Yes' or target.38465792-0985-4d82-9aef-70dff19433e9 is 'Yes'</Exclude>
+      </GenerationFilters>
+      <Id>3b8ddbca-f5c9-4c07-ae22-e1e63166f9ab</Id>
+      <ShortTitle>Repudiation of operational data</ShortTitle>
+      <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
+      <RelatedCategory />
+      <Description>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. </Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(target is '7cdab519-6c8a-4e92-82a1-abd623f63f4e' and source is 'a79cebe5-1bb6-42ec-a94e-231aebd82c5f' ) and ( flow is 'a622b89b-40dc-4ede-a95e-32161ab98344' and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' ) )</Include>
+        <Exclude>flow.edb23fc2-fcf4-4d19-9d12-71887aa3beda is 'Yes'</Exclude>
+      </GenerationFilters>
+      <Id>5679f0c4-c379-410f-86eb-0839804700c0</Id>
+      <ShortTitle>Repudiation of customer data</ShortTitle>
+      <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
+      <RelatedCategory />
+      <Description>An owner of transmitted data may deny association to it if the communication is not signed. </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An owner of transmitted data may deny association to it if the communication is not signed. </Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2456,33 +2168,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2520,33 +2222,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2584,33 +2276,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2658,33 +2340,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2732,33 +2404,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2796,33 +2458,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2860,33 +2512,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2924,33 +2566,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -2988,33 +2620,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3052,33 +2674,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3116,33 +2728,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3180,33 +2782,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3244,33 +2836,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3308,33 +2890,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3382,33 +2954,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3456,33 +3018,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -3530,669 +3082,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636'  or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0' )  and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>(target.a11c4236-cd31-41fc-bd54-c935d6fd6b00 is 'Yes' ) or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>8d3caf02-c3e7-4873-83bd-235e7e946179</Id>
-      <ShortTitle>Execution of malware</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to use an exploit the lack of software autentication to execute malware on the {target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to use an exploit the lack of software autentication to execute malware on the {target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.f7e71688-d496-4601-934e-34ef3412f9a2 is 'Yes' </Exclude>
-      </GenerationFilters>
-      <Id>bb85c466-02aa-4752-8339-db4d788a2488</Id>
-      <ShortTitle>Elevation of privilege due to publicly disclosed vulnerabilities</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to exploit publicly disclosed vulnerabilities in the {target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to exploit publicly disclosed vulnerabilities in the {target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or source is  '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is 'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow.ef8e305b-eaca-4d0d-a14d-4cc8e7d356ac is 'Yes' )and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.a11c4236-cd31-41fc-bd54-c935d6fd6b00 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>ec89ad02-03f8-4706-b813-5d80ab5c44e2</Id>
-      <ShortTitle>Elevation of privilege due to remote update functionality</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to obtain elevated privileges on the {target.Name} if it offers remote update functionality without verifying the authenticity of the update.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to obtain elevated privileges on the {target.Name} if it offers remote update functionality without verifying the authenticity of the update.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>source is  '5fb1612f-ea55-4b86-93e2-d354ee17055d' and  (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4') </Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>9c25b03e-4123-4164-9961-9135363d5d7f</Id>
-      <ShortTitle>Unauthorized access through vendor</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to obtain access to the {target.Name} by compromising the vendor organization.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to gain access to the {source.Name} by first compromising the vendor organization. </Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to obtain access to the {target.Name} by compromising the vendor organization.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>( (source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' )) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.2c7148dc-7746-47ac-8c87-8ada92e3f635 is 'Command&amp;Code' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>f8f29cb3-088e-48aa-9ce7-de14367d8119</Id>
-      <ShortTitle>Unauthorized execution of commands</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to execute unauthorized commands on the {target.Name} if the {target.Name} fails to authenticate the communication.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure Cloud Service Template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to execute unauthorized commands on the {target.Name} if the {target.Name} fails to authenticate the communication.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.69a6c5c8-4f5b-4f95-aab9-c5db3edb88d3 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>673b2647-d815-40d8-8a7d-6903d9d7089b</Id>
-      <ShortTitle>Elevation of privilege due to unsused services or features</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to exploit services or features on the {target.Name} that are enabled but unused. Unused services and features increases the attack surface, and may serve as entry points to the system. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure Template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to exploit services or features on the {target.Name} that are enabled but unused. Unused services and features increases the attack surface, and may serve as entry points to the system. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.68061a2a-8d39-4e3d-84ac-075ae522d8db is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'             </Exclude>
-      </GenerationFilters>
-      <Id>f15b24df-4dde-42f5-a9e9-2c3e9ad1eaf0</Id>
-      <ShortTitle>Elevation of privilege due to lack of input validation</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>Lack of input validation may be the root cause of various exploits. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Lack of input validation may be the root cause of various exploits. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>8b2bfcf8-f905-4748-95c5-fac3192fd2bd</Id>
-      <ShortTitle>Elevation of privilege due to weak authentication</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attakcer may be able to exploit weak authentication procedures, relying on easily guessable credentials, factory set credentials or weak cryptographic keys,  to obtain elevated privileges on the{target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attakcer may be able to exploit weak authentication procedures, relying on easily guessable credentials, factory set credentials or weak cryptographic keys,  to obtain elevated privileges on the{target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>( target is '285d9da0-4646-4c3f-9b00-ca0ddac19e07' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>7ba3b956-803f-4af0-a2e3-5d99e0d51a89</Id>
-      <ShortTitle>Remote control of actuator</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to gain control of the {target.Name}, possibly threatening power availability. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to gain control of the {target.Name}, possibly threatening power availability. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -4230,33 +3136,23 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
@@ -4294,33 +3190,569 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>401186db-9007-42f1-aff8-afb11c4c2e7b</Name>
-          <Label>Loss of power</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>401186db-9007-42f1-aff8-afb11c4c2e7b</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>13611031-846a-45fd-a94d-bbad41734a23</Name>
-          <Label>Difficulties of implementing mitigation</Label>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>13611031-846a-45fd-a94d-bbad41734a23</Id>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude>target.f7e71688-d496-4601-934e-34ef3412f9a2 is 'Yes' </Exclude>
+      </GenerationFilters>
+      <Id>8c978a92-0ff4-46ab-acd1-3da95e8312c9</Id>
+      <ShortTitle>Unauthorized access due to publicly disclosed vulnerabilities</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attacker may attempt to exploit publicly disclosed vulnerabilities in the {target.Name}.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Adapted from Azure template</Value>
+          </Values>
+          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to exploit publicly disclosed vulnerabilities in the {target.Name}.</Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Name>
-          <Label>Affected System</Label>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value xsi:nil="true" />
           </Values>
-          <Id>234d0e49-1ef1-423a-b1d1-026d2b4a4c39</Id>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636'  or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0' )  and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude>(target.a11c4236-cd31-41fc-bd54-c935d6fd6b00 is 'Yes' ) or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
+      </GenerationFilters>
+      <Id>c4c2aad1-d537-433d-a7bd-a85caea29184</Id>
+      <ShortTitle>Execution of malware</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attacker may attempt to use an exploit the lack of software autentication to execute malware on the {target.Name}.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to use an exploit the lack of software autentication to execute malware on the {target.Name}.</Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or source is  '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is 'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow.ef8e305b-eaca-4d0d-a14d-4cc8e7d356ac is 'Yes' )and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude>target.a11c4236-cd31-41fc-bd54-c935d6fd6b00 is 'Yes'</Exclude>
+      </GenerationFilters>
+      <Id>8c2a8db9-d3e1-417b-b72c-3fd4f65ebfcf</Id>
+      <ShortTitle>Unauthorized access due to remote update functionality</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attacker may attempt to obtain elevated privileges on the {target.Name} if it offers remote update functionality without verifying the authenticity of the update.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to obtain elevated privileges on the {target.Name} if it offers remote update functionality without verifying the authenticity of the update.</Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>source is  '5fb1612f-ea55-4b86-93e2-d354ee17055d' and  (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4') </Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>4b1f759c-099a-4a67-9dd9-f37d94458121</Id>
+      <ShortTitle>Unauthorized access through vendor</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attacker may attempt to obtain access to the {target.Name} by compromising the vendor organization.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to gain access to the {source.Name} by first compromising the vendor organization. </Value>
+          </Values>
+          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to obtain access to the {target.Name} by compromising the vendor organization.</Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>( (source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' )) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.2c7148dc-7746-47ac-8c87-8ada92e3f635 is 'Command&amp;Code' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'</Exclude>
+      </GenerationFilters>
+      <Id>f75d82a8-eed2-418c-88f4-6a8c819a2fbb</Id>
+      <ShortTitle>Unauthorized execution of commands</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attacker may attempt to execute unauthorized commands on the {target.Name} if the {target.Name} fails to authenticate the communication.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Adapted from Azure Cloud Service Template</Value>
+          </Values>
+          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to execute unauthorized commands on the {target.Name} if the {target.Name} fails to authenticate the communication.</Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude>target.69a6c5c8-4f5b-4f95-aab9-c5db3edb88d3 is 'Yes'</Exclude>
+      </GenerationFilters>
+      <Id>0474017a-a394-4b00-9d10-e707d7923783</Id>
+      <ShortTitle>Unauthorized access due to unsused services or features</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attacker may attempt to exploit services or features on the {target.Name} that are enabled but unused. Unused services and features increases the attack surface, and may serve as entry points to the system. </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Adapted from Azure Template</Value>
+          </Values>
+          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to exploit services or features on the {target.Name} that are enabled but unused. Unused services and features increases the attack surface, and may serve as entry points to the system. </Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude>target.68061a2a-8d39-4e3d-84ac-075ae522d8db is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'           </Exclude>
+      </GenerationFilters>
+      <Id>4a71d267-9431-4870-bebd-3e9be785ac35</Id>
+      <ShortTitle>Unauthorized access due to lack of input validation</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>Lack of input validation may be the root cause of various exploits. </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Adapted from default template</Value>
+          </Values>
+          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Lack of input validation may be the root cause of various exploits. </Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>56afe44f-1098-4e63-ad90-799bf8c38554</Id>
+      <ShortTitle>Unathorized access due to weak authentication</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attakcer may be able to exploit weak authentication procedures, relying on easily guessable credentials, factory set credentials or weak cryptographic keys,  to obtain elevated privileges on the{target.Name}.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Adapted from default template</Value>
+          </Values>
+          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attakcer may be able to exploit weak authentication procedures, relying on easily guessable credentials, factory set credentials or weak cryptographic keys,  to obtain elevated privileges on the{target.Name}.</Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>( target is '285d9da0-4646-4c3f-9b00-ca0ddac19e07' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>74ba8944-fa5f-4ceb-bd15-cc5acbd6a473</Id>
+      <ShortTitle>Remote control of actuator</ShortTitle>
+      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <RelatedCategory />
+      <Description>An attacker may attempt to gain control of the {target.Name}, possibly threatening power availability. </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An attacker may attempt to gain control of the {target.Name}, possibly threatening power availability. </Value>
+          </Values>
+          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
+          <Label>Impact</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
+          <Label>Probability</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
