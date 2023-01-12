@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.2.0.1" author="LAPTOP-GTP4U7EO\larsf" />
+  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.2.0.94" author="LAPTOP-GTP4U7EO\larsf" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -72,37 +72,23 @@
         <AttributeType>1</AttributeType>
       </ThreatMetaDatum>
       <ThreatMetaDatum>
-        <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-        <Label>Impact</Label>
-        <HideFromUI>false</HideFromUI>
-        <Values>
-          <Value>Low</Value>
-          <Value>Medium</Value>
-          <Value>High</Value>
-        </Values>
-        <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-        <AttributeType>1</AttributeType>
-      </ThreatMetaDatum>
-      <ThreatMetaDatum>
-        <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-        <Label>Probability</Label>
-        <HideFromUI>false</HideFromUI>
-        <Values>
-          <Value>Low</Value>
-          <Value>Medium</Value>
-          <Value>High</Value>
-        </Values>
-        <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-        <AttributeType>1</AttributeType>
-      </ThreatMetaDatum>
-      <ThreatMetaDatum>
-        <Name>b8a4702f-3e42-4410-8142-7a6cb0e5dac5</Name>
-        <Label>Possible mitigation</Label>
+        <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+        <Label>Source</Label>
         <HideFromUI>false</HideFromUI>
         <Values>
           <Value />
         </Values>
-        <Id>b8a4702f-3e42-4410-8142-7a6cb0e5dac5</Id>
+        <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
+        <AttributeType>0</AttributeType>
+      </ThreatMetaDatum>
+      <ThreatMetaDatum>
+        <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+        <Label>Target</Label>
+        <HideFromUI>false</HideFromUI>
+        <Values>
+          <Value />
+        </Values>
+        <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
         <AttributeType>0</AttributeType>
       </ThreatMetaDatum>
     </PropertiesMetaData>
@@ -119,20 +105,6 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes>
-        <Attribute>
-          <Id>a17baecd-d232-4fba-81e3-506242dd9a9b</Id>
-          <IsInherited>false</IsInherited>
-          <Name>a11c4236-cd31-41fc-bd54-c935d6fd6b00</Name>
-          <DisplayName>Provides Software Authentication</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
         <Attribute>
           <Id>1aea8b61-61b1-410c-9348-e441d96ae22a</Id>
           <IsInherited>false</IsInherited>
@@ -152,76 +124,6 @@
           <IsInherited>false</IsInherited>
           <Name>38465792-0985-4d82-9aef-70dff19433e9</Name>
           <DisplayName>Logs process communication</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>9b80aa6e-9daa-421c-9166-705ff2b6c626</Id>
-          <IsInherited>false</IsInherited>
-          <Name>f7e71688-d496-4601-934e-34ef3412f9a2</Name>
-          <DisplayName>Has the latest patch</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>0e60a9bc-3486-4f15-aeb3-250b358aea5f</Id>
-          <IsInherited>false</IsInherited>
-          <Name>68061a2a-8d39-4e3d-84ac-075ae522d8db</Name>
-          <DisplayName>Validates input</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>0eeee86b-a0ac-4d0a-aebb-32332d5a4b9c</Id>
-          <IsInherited>false</IsInherited>
-          <Name>69a6c5c8-4f5b-4f95-aab9-c5db3edb88d3</Name>
-          <DisplayName>Unused services and features disabled</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>b23ffdea-7d37-4731-b036-c07cc56f06bf</Id>
-          <IsInherited>false</IsInherited>
-          <Name>99626ec9-11ef-45e9-869b-f317ad42058f</Name>
-          <DisplayName>Stores credential</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>f9286f14-c9bf-4748-9ba7-01cc666ee70e</Id>
-          <IsInherited>false</IsInherited>
-          <Name>90c6a476-9306-43b7-aa97-851a8a452077</Name>
-          <DisplayName>Physical component</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -304,45 +206,6 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes>
-        <Attribute>
-          <Id>9651ecde-1ad2-45a6-b659-8719b1f73f1b</Id>
-          <IsInherited>false</IsInherited>
-          <Name>ae4f6d99-24c0-4391-b600-2f4012377bc9</Name>
-          <DisplayName>Stores Credentials</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>a0571f46-380e-4540-98ae-2d983ec65b08</Id>
-          <IsInherited>false</IsInherited>
-          <Name>56c6ed87-ce3e-4676-b2c7-88798bedbd15</Name>
-          <DisplayName>Stores Log Data</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>b991a839-0a05-4497-862c-13a609a7c15c</Id>
-          <IsInherited>false</IsInherited>
-          <Name>6a747447-66de-4d37-aca3-52a55ec1fefc</Name>
-          <DisplayName>Access based on least privilege</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-            <Value>Yes</Value>
-          </AttributeValues>
-        </Attribute>
         <Attribute>
           <Id>65230216-639a-4be3-aae6-ad50b0ee0c4b</Id>
           <IsInherited>false</IsInherited>
@@ -445,146 +308,6 @@
           </AttributeValues>
         </Attribute>
         <Attribute>
-          <Id>01fe6ea2-5b45-4186-bba0-f270e1adeb45</Id>
-          <IsInherited>false</IsInherited>
-          <Name>d78e4115-1d3c-48d6-acb3-7f2128191d25</Name>
-          <DisplayName>Replay Protected</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>495754b0-f017-4768-a4be-2d2ad5eb90be</Id>
-          <IsInherited>false</IsInherited>
-          <Name>34be12a6-828c-45f4-8260-64544e739e7c</Name>
-          <DisplayName>Supports older cryptographic protocols</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5841eb7c-7610-471c-bdda-1ae9d768930c</Id>
-          <IsInherited>false</IsInherited>
-          <Name>2c7148dc-7746-47ac-8c87-8ada92e3f635</Name>
-          <DisplayName>Data or Command&amp;Code</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Data</Value>
-            <Value>Command&amp;Code</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>a6b6d304-d1e6-4cdf-a7f2-2df16463ce11</Id>
-          <IsInherited>false</IsInherited>
-          <Name>099fa6e4-a7cb-471f-996c-17f0d5d68e18</Name>
-          <DisplayName>Transmits credentials</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5944d3c9-3e5f-4edb-988c-16565b73a836</Id>
-          <IsInherited>false</IsInherited>
-          <Name>ef8e305b-eaca-4d0d-a14d-4cc8e7d356ac</Name>
-          <DisplayName>Remote update of software or firmware</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>6300f4e7-fecc-4f9f-9afd-1696fe4cf5b0</Id>
-          <IsInherited>false</IsInherited>
-          <Name>59c9b5f1-2838-44ba-8a96-de535d2ef871</Name>
-          <DisplayName>TCP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>746109b4-57ef-4b64-8529-657f2709b904</Id>
-          <IsInherited>false</IsInherited>
-          <Name>e72aa008-3050-4787-8f05-b1b877679b5b</Name>
-          <DisplayName>UDP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>04ffac23-1549-486a-b3f3-8daf85b3b5a6</Id>
-          <IsInherited>false</IsInherited>
-          <Name>d519816f-8c85-4c0d-b200-f0fa3abeffe4</Name>
-          <DisplayName>IP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5056fafe-5951-45b4-ba65-bbee88de197f</Id>
-          <IsInherited>false</IsInherited>
-          <Name>383903e6-fbec-4ce5-b06b-176ad47d9cfb</Name>
-          <DisplayName>IPsec</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>c4633b57-32f1-45af-bcff-6128d56fc0c5</Id>
-          <IsInherited>false</IsInherited>
-          <Name>f9ad816a-800e-439b-9930-4e01840429f3</Name>
-          <DisplayName>ARP</DisplayName>
-          <Mode>Dynamic</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Select</Value>
-            <Value>Yes</Value>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
           <Id>3d1c3ef7-97cd-43c3-9018-ed0b3f168d34</Id>
           <IsInherited>false</IsInherited>
           <Name>44f16d0d-a124-478d-b3f3-cc02744718ae</Name>
@@ -597,6 +320,20 @@
             <Value>Wireless</Value>
             <Value>Wired</Value>
             <Value>Fiber optic</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>bb46567d-750f-4978-a945-d42a481d7edf</Id>
+          <IsInherited>false</IsInherited>
+          <Name>db9d896e-d6f5-48fb-bfe0-252709178dd0</Name>
+          <DisplayName>Data or Command&amp;Code</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Select</Value>
+            <Value>Data</Value>
+            <Value>Command&amp;Code</Value>
           </AttributeValues>
         </Attribute>
       </Attributes>
@@ -835,15 +572,17 @@
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes>
         <Attribute>
-          <Id>ff01acb8-4a02-4d61-b61d-648c55f1dbe0</Id>
+          <Id>54382ad3-21fb-4cfe-9d69-905e35564354</Id>
           <IsInherited>false</IsInherited>
-          <Name>4aad96b2-078d-4962-a660-a579f6c9021d</Name>
-          <DisplayName>Store Type</DisplayName>
-          <Mode>Static</Mode>
+          <Name>abfcdc2a-3d3b-42d8-a94e-fb030725e534</Name>
+          <DisplayName>SQL Relational Database</DisplayName>
+          <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
           <AttributeValues>
-            <Value>SQL Relational Database</Value>
+            <Value>Select</Value>
+            <Value>Yes</Value>
+            <Value>No</Value>
           </AttributeValues>
         </Attribute>
       </Attributes>
@@ -913,126 +652,6 @@
             <Value>No</Value>
           </AttributeValues>
         </Attribute>
-        <Attribute>
-          <Id>01fe6ea2-5b45-4186-bba0-f270e1adeb45</Id>
-          <IsInherited>true</IsInherited>
-          <Name>d78e4115-1d3c-48d6-acb3-7f2128191d25</Name>
-          <DisplayName>Replay Protected</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>495754b0-f017-4768-a4be-2d2ad5eb90be</Id>
-          <IsInherited>true</IsInherited>
-          <Name>34be12a6-828c-45f4-8260-64544e739e7c</Name>
-          <DisplayName>Supports older cryptographic protocols</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5841eb7c-7610-471c-bdda-1ae9d768930c</Id>
-          <IsInherited>true</IsInherited>
-          <Name>2c7148dc-7746-47ac-8c87-8ada92e3f635</Name>
-          <DisplayName>Data or Command&amp;Code</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Data</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>a6b6d304-d1e6-4cdf-a7f2-2df16463ce11</Id>
-          <IsInherited>true</IsInherited>
-          <Name>099fa6e4-a7cb-471f-996c-17f0d5d68e18</Name>
-          <DisplayName>Transmits credentials</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5944d3c9-3e5f-4edb-988c-16565b73a836</Id>
-          <IsInherited>true</IsInherited>
-          <Name>ef8e305b-eaca-4d0d-a14d-4cc8e7d356ac</Name>
-          <DisplayName>Remote update of software or firmware</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>6300f4e7-fecc-4f9f-9afd-1696fe4cf5b0</Id>
-          <IsInherited>true</IsInherited>
-          <Name>59c9b5f1-2838-44ba-8a96-de535d2ef871</Name>
-          <DisplayName>TCP</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Yes</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>746109b4-57ef-4b64-8529-657f2709b904</Id>
-          <IsInherited>true</IsInherited>
-          <Name>e72aa008-3050-4787-8f05-b1b877679b5b</Name>
-          <DisplayName>UDP</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>04ffac23-1549-486a-b3f3-8daf85b3b5a6</Id>
-          <IsInherited>true</IsInherited>
-          <Name>d519816f-8c85-4c0d-b200-f0fa3abeffe4</Name>
-          <DisplayName>IP</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>Yes</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>5056fafe-5951-45b4-ba65-bbee88de197f</Id>
-          <IsInherited>true</IsInherited>
-          <Name>383903e6-fbec-4ce5-b06b-176ad47d9cfb</Name>
-          <DisplayName>IPsec</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
-        <Attribute>
-          <Id>c4633b57-32f1-45af-bcff-6128d56fc0c5</Id>
-          <IsInherited>true</IsInherited>
-          <Name>f9ad816a-800e-439b-9930-4e01840429f3</Name>
-          <DisplayName>ARP</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>No</Value>
-          </AttributeValues>
-        </Attribute>
       </Attributes>
       <StencilConstraints>
         <StencilConstraint>
@@ -1046,12 +665,6 @@
     <ThreatCategory>
       <Name>Spoofing</Name>
       <Id>66d93b58-6d13-4431-aa06-65906cc551f0</Id>
-      <ShortDescription />
-      <LongDescription />
-    </ThreatCategory>
-    <ThreatCategory>
-      <Name>Physical</Name>
-      <Id>e1e178eb-7465-4bfe-bce8-a9d4a6bf58d7</Id>
       <ShortDescription />
       <LongDescription />
     </ThreatCategory>
@@ -1080,14 +693,14 @@
       <LongDescription />
     </ThreatCategory>
     <ThreatCategory>
-      <Name>Elevation of Privilege</Name>
-      <Id>555172d8-70fc-42bb-9485-01cab71685b3</Id>
+      <Name>Unauthorized Access</Name>
+      <Id>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Id>
       <ShortDescription />
       <LongDescription />
     </ThreatCategory>
     <ThreatCategory>
-      <Name>Unauthorized Access</Name>
-      <Id>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Id>
+      <Name>Insider </Name>
+      <Id>8806aa20-f3cd-4272-902b-3d38e79c7edf</Id>
       <ShortDescription />
       <LongDescription />
     </ThreatCategory>
@@ -1095,68 +708,14 @@
   <ThreatTypes>
     <ThreatType>
       <GenerationFilters>
-        <Include>(target is  '285d9da0-4646-4c3f-9b00-ca0ddac19e07') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>0bbccb72-9297-48f1-82a4-3ed7ffbe350e</Id>
-      <ShortTitle>Control input spoofing</ShortTitle>
-      <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to spoof control commands in order to make the {target.Name} behave in a malicious way.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to spoof control commands in order to make the {target.Name} behave in a malicious way.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>High</Value>
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
         <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4' ) </Include>
         <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
       </GenerationFilters>
       <Id>85abfe10-724c-4390-8892-bbc6ab43def1</Id>
-      <ShortTitle>Spoofing the source</ShortTitle>
+      <ShortTitle>Spoofing of process</ShortTitle>
       <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
       <RelatedCategory />
-      <Description>The {source.Name} may be spoofed by an attacker and this may lead to unauthorized access to the {target.Name} or incorrect data delivered to the {target.Name}. Consider using a standard authentication mechanism to identify the source process.</Description>
+      <Description>An attacker may send messages appearing to come from {source.Name}. This may lead to unauthorized access to the {target.Name} or incorrect data delivered to the {target.Name}. Spoofing can for instance be performed through a man in the middle attack, replaying captured messages or forging new messages.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -1173,7 +732,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>The {source.Name} may be spoofed by an attacker and this may lead to unauthorized access to the {target.Name} or incorrect data delivered to the {target.Name}. Consider using a standard authentication mechanism to identify the source process.</Value>
+            <Value>An attacker may send messages appearing to come from {source.Name}. This may lead to unauthorized access to the {target.Name} or incorrect data delivered to the {target.Name}. Spoofing can for instance be performed through a man in the middle attack, replaying captured messages or forging new messages.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1190,270 +749,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or  source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or  source is '9f37b974-a230-4534-b59d-cf2eeaee42b0' ) and  (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or  target is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4') </Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'  or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>fbe2440d-581e-4c67-a7b0-6533304ba957</Id>
-      <ShortTitle>Spoofing the target</ShortTitle>
-      <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
-      <RelatedCategory />
-      <Description>The {target.Name} may be spoofed by an attacker and this may lead to information disclosure by the {source.Name} or to data being sent to the attacker's target instead of the {target.Name}. Consider using a standard authentication mechanism to identify the destination process.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>The {target.Name} may be spoofed by an attacker and this may lead to information disclosure by the {source.Name} or to data being sent to the attacker's target instead of the {target.Name}. Consider using a standard authentication mechanism to identify the destination process.</Value>
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
           <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>High</Value>
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>source is '9f37b974-a230-4534-b59d-cf2eeaee42b0' and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' ) and ( flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>d3447bdf-70b4-4f3a-b6be-ed3dc4264cf1</Id>
-      <ShortTitle>Spoofing of Data Store source</ShortTitle>
-      <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to send malicious data to a process by pretending to be a legitimate data store. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Included from the default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to send malicious data to a process by pretending to be a legitimate data store. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>( source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or source is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or target is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and ( flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>38d80e9f-3c09-4c25-8cb9-f76c45511550</Id>
-      <ShortTitle>Man In The Middle Attack</ShortTitle>
-      <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to perform an Man-In-the-Middle attack between the {source.Name} and the {target.Name}. This can result in both disclosure and tampering of messages, and spoofing of the {source.Name}, {target.Name} or both. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to perform an Man-In-the-Middle attack between the {source.Name} and the {target.Name}. This can result in both disclosure and tampering of messages, and spoofing of the {source.Name}, {target.Name} or both. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>High</Value>
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow.f9ad816a-800e-439b-9930-4e01840429f3 is 'Yes' ) and ( flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' </Exclude>
-      </GenerationFilters>
-      <Id>66a60573-f0ee-4e18-94b1-4426c24dac2f</Id>
-      <ShortTitle>ARP Man-In-the-Middle Attack</ShortTitle>
-      <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to perform an ARP Man-In-the-Middle Attack between the {source.Name} and the {target.Name}. This can result in both disclosure and tampering of messages and spoofing of {source.Name}, {target.Name} or both. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to perform an ARP Man-In-the-Middle Attack between the {source.Name} and the {target.Name}. This can result in both disclosure and tampering of messages and spoofing of {source.Name}, {target.Name} or both. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>High</Value>
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -1466,14 +779,14 @@
       <ShortTitle>GPS spoofing</ShortTitle>
       <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to spoof the GPS signal possibly causing the {target.Name} to label measurements with false timestamps. </Description>
+      <Description>An attacker may attempt to spoof the GPS signal possibly causing the {target.Name} to label measurements with false timestamps.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to spoof the GPS signal possibly causing the {target.Name} to label measurements with false timestamps. </Value>
+            <Value>An attacker may attempt to spoof the GPS signal possibly causing the {target.Name} to label measurements with false timestamps.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1490,78 +803,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4') </Include>
-        <Exclude>flow.d78e4115-1d3c-48d6-acb3-7f2128191d25 is 'Yes'  or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>12ee451b-6b0d-4dce-be00-c74db43cddaa</Id>
-      <ShortTitle>Replay attack</ShortTitle>
-      <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to intercept a message from the {source.Name} to the {target.Name} and resend it at a later time</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to intercept a message from the {source.Name} to the {target.Name} and resend it at a later time</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>High</Value>
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -1574,14 +833,14 @@
       <ShortTitle>BGP hijacking</ShortTitle>
       <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which is not part of the attacker autohonous system (network). Additionally, an attacker may attempt to hijack communication by altering the autonomous system path, so that the best path appears to go through the attacker autonomous system.  </Description>
+      <Description>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which are not part of the attacker's network. Additionally, an attacker may attempt to hijack communication by altering the network path, so that the best path appears to go through the attacker's network. Both attacks can cause packet to te rerouted to the attackers network. </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which is not part of the attacker autohonous system (network). Additionally, an attacker may attempt to hijack communication by altering the autonomous system path, so that the best path appears to go through the attacker autonomous system.  </Value>
+            <Value>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which are not part of the attacker's network. Additionally, an attacker may attempt to hijack communication by altering the network path, so that the best path appears to go through the attacker's network. Both attacks can cause packet to te rerouted to the attackers network. </Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1598,88 +857,34 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' and target.90c6a476-9306-43b7-aa97-851a8a452077 is 'Yes' and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>22c94b6f-783b-43e9-98c8-10759685bfd9</Id>
-      <ShortTitle>Physical tampering</ShortTitle>
-      <Category>e1e178eb-7465-4bfe-bce8-a9d4a6bf58d7</Category>
-      <RelatedCategory />
-      <Description>An attacker with access to the {target.Name} may attempt to tamper or destroy it. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker with access to the {target.Name} may attempt to tamper or destroy it. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
         <Include>(flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
+        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130' or flow.261c742e-c187-4b1c-a8c6-91ffb8b189c9 is 'Yes'</Exclude>
       </GenerationFilters>
       <Id>3071ef4d-7288-413d-8243-cc3eca2c7e44</Id>
-      <ShortTitle>Tampering of communication data</ShortTitle>
+      <ShortTitle>Tampering of transmitted data</ShortTitle>
       <Category>a6ad399e-6e9d-4d8e-b710-88dec85b5249</Category>
       <RelatedCategory />
       <Description>An attacker may attempt to tamper with the communication between the {source.Name} and the {target.Name}.</Description>
@@ -1706,84 +911,30 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>flow.44f16d0d-a124-478d-b3f3-cc02744718ae is 'Fiber optic' and  (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>999b4397-4cc6-4376-af4d-c76cfc1da2be</Id>
-      <ShortTitle>Injection of data in fiber optical cables</ShortTitle>
-      <Category>a6ad399e-6e9d-4d8e-b710-88dec85b5249</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to inject data in a fibre optic cable connecting the {source.Name} and the {target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to inject data in a fibre optic cable connecting the {source.Name} and the {target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' and target.4aad96b2-078d-4962-a660-a579f6c9021d is 'SQL Relational Database') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>(target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' and target.abfcdc2a-3d3b-42d8-a94e-fb030725e534 is 'Yes' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
         <Exclude>target.1eb0a7c6-de06-4194-ae85-ae755ac1e0a0 is 'Yes' or flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'</Exclude>
       </GenerationFilters>
       <Id>dfe41a90-f4d8-4f34-beaa-079624b588f3</Id>
@@ -1814,54 +965,44 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>( source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' ) and target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.261c742e-c187-4b1c-a8c6-91ffb8b189c9 is 'Yes'</Exclude>
+        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' and flow is 'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Exclude />
       </GenerationFilters>
-      <Id>4359cbbe-c5ae-4cfd-a77f-e6125dca918c</Id>
-      <ShortTitle>Corruption of Data Store by tampering of data flow</ShortTitle>
+      <Id>4b3d4b8e-5694-4837-83c5-19c7bdba5710</Id>
+      <ShortTitle>Tampering of process information</ShortTitle>
       <Category>a6ad399e-6e9d-4d8e-b710-88dec85b5249</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to tamper the data flow between the {source.Name} and {target.Name}. This may lead to corruption of the {target.Name}. Ensure the integrity of the data flow to the data store.</Description>
+      <Description>An attacker may attempt to tamper the information inside the {target.Name}. For instance configurations or memory locations relevant for the correct operation of the {target.Name}.</Description>
       <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adopted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to tamper the data flow between the {source.Name} and {target.Name}. This may lead to corruption of the {target.Name}. Ensure the integrity of the data flow to the data store.</Value>
+            <Value>An attacker may attempt to tamper the information inside the {target.Name}. For instance configurations or memory locations relevant for the correct operation of the {target.Name}.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1878,37 +1019,37 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.db9d896e-d6f5-48fb-bfe0-252709178dd0 is 'Command&amp;Code' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
         <Exclude>target.876a3f9e-9781-4a78-94da-6575fd1d8562 is 'Yes' </Exclude>
       </GenerationFilters>
       <Id>8c9c67d3-c85c-4d33-bea7-c28ab582383b</Id>
-      <ShortTitle>Repudiation of actions performed on data store</ShortTitle>
+      <ShortTitle>Repudiation of performed actions</ShortTitle>
       <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
       <RelatedCategory />
-      <Description>An attacker may deny having performed an action on the {target.Name} if the target does not log actions. </Description>
+      <Description>An attacker may deny having performed an action on the {target.Name} if the target does not log actions.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -1925,7 +1066,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may deny having performed an action on the {target.Name} if the target does not log actions. </Value>
+            <Value>An attacker may deny having performed an action on the {target.Name} if the target does not log actions.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1942,88 +1083,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.2c7148dc-7746-47ac-8c87-8ada92e3f635 is 'Command&amp;Code' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
-        <Exclude>target.aa7975a6-bc55-419f-871d-f1b49a4a4ca4 is 'Yes' </Exclude>
-      </GenerationFilters>
-      <Id>907b8fb4-1235-4859-b449-78c5cea26504</Id>
-      <ShortTitle>Repudiation of actions performed on process</ShortTitle>
-      <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
-      <RelatedCategory />
-      <Description>An attacker may deny having performed an action on the {target.Name} if it does not log actions. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may deny having performed an action on the {target.Name} if it does not log actions. </Value>
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
           <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -2036,14 +1113,14 @@
       <ShortTitle>Repudiation of operational data</ShortTitle>
       <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
       <RelatedCategory />
-      <Description>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. </Description>
+      <Description>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. This might in turn hinder resoration and forensic efforts. </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. </Value>
+            <Value>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. This might in turn hinder resoration and forensic efforts. </Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -2060,24 +1137,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -2090,14 +1167,14 @@
       <ShortTitle>Repudiation of customer data</ShortTitle>
       <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
       <RelatedCategory />
-      <Description>An owner of transmitted data may deny association to it if the communication is not signed. </Description>
+      <Description>An owner of transmitted data may deny association to it if the communication is not signed.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An owner of transmitted data may deny association to it if the communication is not signed. </Value>
+            <Value>An owner of transmitted data may deny association to it if the communication is not signed.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -2114,44 +1191,44 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
         <Include>(flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.fbf3cbf8-6a7d-4dbb-9664-4b7900e30074 is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
+        <Exclude>flow.fbf3cbf8-6a7d-4dbb-9664-4b7900e30074 is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130' or (source is  'a79cebe5-1bb6-42ec-a94e-231aebd82c5f' or  source is '285d9da0-4646-4c3f-9b00-ca0ddac19e07' ) or  ( target is 'a79cebe5-1bb6-42ec-a94e-231aebd82c5f' or  target is '285d9da0-4646-4c3f-9b00-ca0ddac19e07' )</Exclude>
       </GenerationFilters>
       <Id>b5893eaf-9fc3-4d0d-beb6-42e5c5aa656b</Id>
-      <ShortTitle>Data Flow Sniffing</ShortTitle>
+      <ShortTitle>Disclosure of transmitted information</ShortTitle>
       <Category>e0da5e22-f13a-4771-9973-2eb933f28c46</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to learn the content of the communication between the {source.Name} and the {target.Name}.</Description>
+      <Description>An attacker may attempt to learn the content of the infromation transmitted between the {source.Name} and the {target.Name}. This threat is particularly critical if credentials are transmitted in an insecure way.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to learn the content of the communication between the {source.Name} and the {target.Name}.</Value>
+            <Value>An attacker may attempt to learn the content of the infromation transmitted between the {source.Name} and the {target.Name}. This threat is particularly critical if credentials are transmitted in an insecure way.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -2168,314 +1245,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(flow.fbf3cbf8-6a7d-4dbb-9664-4b7900e30074 is 'Yes' or  flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' or  flow.261c742e-c187-4b1c-a8c6-91ffb8b189c9 is 'Yes' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.34be12a6-828c-45f4-8260-64544e739e7c is 'No'</Exclude>
-      </GenerationFilters>
-      <Id>79b2564e-35c7-404a-80bf-914847598649</Id>
-      <ShortTitle>Downgrade attack</ShortTitle>
-      <Category>e0da5e22-f13a-4771-9973-2eb933f28c46</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to cause the communication to fall back to older and less secure cryptographic protocols. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to cause the communication to fall back to older and less secure cryptographic protocols. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>flow.44f16d0d-a124-478d-b3f3-cc02744718ae is 'Fiber optic' and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.fbf3cbf8-6a7d-4dbb-9664-4b7900e30074 is 'Yes'  or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>4d5ae2c2-1d6f-4079-bacd-4260bf98af76</Id>
-      <ShortTitle>Wiretapping of fiber optic cables</ShortTitle>
-      <Category>e0da5e22-f13a-4771-9973-2eb933f28c46</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to wiretapp the fibre optic cables connecting the {source.Name} and the {target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to wiretapp the fibre optic cables connecting the {source.Name} and the {target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
           <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' and  (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or  target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow.099fa6e4-a7cb-471f-996c-17f0d5d68e18 is 'Yes' ) and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.fbf3cbf8-6a7d-4dbb-9664-4b7900e30074 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>8e52ca58-da1a-4fb7-b716-cb0679d81ed8</Id>
-      <ShortTitle>Exploitation of weak credential transit</ShortTitle>
-      <Category>e0da5e22-f13a-4771-9973-2eb933f28c46</Category>
-      <RelatedCategory />
-      <Description>Credentials may be subject to sniffing while being transferred between the {source.Name} and {target.Name}. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Credentials may be subject to sniffing while being transferred between the {source.Name} and {target.Name}. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or  source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and  (target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.099fa6e4-a7cb-471f-996c-17f0d5d68e18 is 'Yes'  ) and  (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.ae4f6d99-24c0-4391-b600-2f4012377bc9 is 'No'</Exclude>
-      </GenerationFilters>
-      <Id>d6bbdb85-907c-4cea-8a8a-5bbbfd930780</Id>
-      <ShortTitle>Exploitation of weak credential storage</ShortTitle>
-      <Category>e0da5e22-f13a-4771-9973-2eb933f28c46</Category>
-      <RelatedCategory />
-      <Description>Improper storage of credentials in the {target.Name} may enable an attacker to obtain greater privileges in the {target.Name}. Consider hashing or encrypting credentials. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template. </Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Improper storage of credentials in the {target.Name} may enable an attacker to obtain greater privileges in the {target.Name}. Consider hashing or encrypting credentials. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>( flow.fbf3cbf8-6a7d-4dbb-9664-4b7900e30074 is 'Yes' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>e24cc55e-787a-467b-b4d6-45f135dcf961</Id>
-      <ShortTitle>Disclosure of encrypted information</ShortTitle>
-      <Category>e0da5e22-f13a-4771-9973-2eb933f28c46</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to learn the contents of the communication if, for instance, weak encryption standards or weak encryption keys are used. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to learn the contents of the communication if, for instance, weak encryption standards or weak encryption keys are used. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -2488,14 +1275,14 @@
       <ShortTitle>External Distributed Denial of Service attack</ShortTitle>
       <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
       <RelatedCategory />
-      <Description>The {source.Name} may attempt to  flood the {target.Name} with network traffic, in an attempt to make it unavailable.</Description>
+      <Description>An attacker with a presence in an external network may attempt to  flood the {target.Name} with network traffic, in an attempt to make it unavailable.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>The {source.Name} may attempt to  flood the {target.Name} with network traffic, in an attempt to make it unavailable.</Value>
+            <Value>An attacker with a presence in an external network may attempt to  flood the {target.Name} with network traffic, in an attempt to make it unavailable.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -2512,24 +1299,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -2539,17 +1326,17 @@
         <Exclude />
       </GenerationFilters>
       <Id>19dd768b-755d-4109-9bf8-99776aecc281</Id>
-      <ShortTitle>Flooding Denial of Service Attack</ShortTitle>
+      <ShortTitle>Denial of service of process</ShortTitle>
       <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to launch a flooding type of DoS attack on the {target.Name}.</Description>
+      <Description>An attacker may attempt to generate large volumes of data, send specially crafted packet, or otherwise attempt to make the {target.Name} unavailable. Such attacks may exploit different protocols (ARP, IP, UDP, TCP) or happen at the application level.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to launch a flooding type of DoS attack on the {target.Name}.</Value>
+            <Value>An attacker may attempt to generate large volumes of data, send specially crafted packet, or otherwise attempt to make the {target.Name} unavailable. Such attacks may exploit different protocols (ARP, IP, UDP, TCP) or happen at the application level.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -2566,132 +1353,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is 'a79cebe5-1bb6-42ec-a94e-231aebd82c5f' and  target is '7cdab519-6c8a-4e92-82a1-abd623f63f4e') and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>b9bc1b4f-0ad0-4cd8-b1bc-f7087382abd0</Id>
-      <ShortTitle>Smart meter-based DDoS attack on AMI Server</ShortTitle>
-      <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
-      <RelatedCategory />
-      <Description>An attacker may compromise a large number of smart meters, and use them to launch a DDoS attack on the AMI server. This can happen either through exploiting a protocol (e.g. TCP SYN attack) or by generating such amounts of bandwidth that legitimate mesages are dropped by the server.  </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may compromise a large number of smart meters, and use them to launch a DDoS attack on the AMI server. This can happen either through exploiting a protocol (e.g. TCP SYN attack) or by generating such amounts of bandwidth that legitimate mesages are dropped by the server.  </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>bd9ce826-80f3-4dbc-b33c-09bb7e052631</Id>
-      <ShortTitle>Denial of service through specially crafted message</ShortTitle>
-      <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
-      <RelatedCategory />
-      <Description>The {source.Name} may send a specially crafted message to the {target.Name}, with the intent of exploiting a vulnerability to make it unavailable. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>The {source.Name} may send a specially crafted message to the {target.Name}, with the intent of exploiting a vulnerability to make it unavailable. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
           <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -2728,250 +1407,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' ) and (flow.59c9b5f1-2838-44ba-8a96-de535d2ef871 is 'Yes' ) and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or flow.383903e6-fbec-4ce5-b06b-176ad47d9cfb is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>3a75a18b-6b5f-4f0d-b5dd-fa26eca70936</Id>
-      <ShortTitle>TCP-SYN flooding</ShortTitle>
-      <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to make the {target.Name} unavailable through a TCP-SYN flooding type of attack.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to make the {target.Name} unavailable through a TCP-SYN flooding type of attack.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.f9ad816a-800e-439b-9930-4e01840429f3 is 'Yes'  and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>fe5dbffd-76b7-4068-849a-547f9198299c</Id>
-      <ShortTitle>ARP flooding</ShortTitle>
-      <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to launch an ARP flooding attack against the {target.Name} making it unavailable. This requires that the attacker has established a presence on the local network. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to launch an ARP flooding attack against the {target.Name} making it unavailable. This requires that the attacker has established a presence on the local network. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
           <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow.d519816f-8c85-4c0d-b200-f0fa3abeffe4 is 'Yes'  or  flow.e72aa008-3050-4787-8f05-b1b877679b5b is 'Yes' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>3e654c5b-0005-4493-80ed-7172e49bf9a1</Id>
-      <ShortTitle>IP or UDP flooding</ShortTitle>
-      <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to deny the service of the {target.Name} by flooding it with IP or UDP packets.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to deny the service of the {target.Name} by flooding it with IP or UDP packets.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>3602d973-65b1-4c2f-8ff3-4c94a89c7e39</Id>
-      <ShortTitle>Interruption of Data Flow</ShortTitle>
-      <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to interrupt the data flow between the {source.Name} and the {target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to interrupt the data flow between the {source.Name} and the {target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -3018,226 +1471,44 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' and ( flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'  or target.6a747447-66de-4d37-aca3-52a55ec1fefc is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>77881be8-a28b-48b9-81c7-aeb919cdcbfe</Id>
-      <ShortTitle>Elevation of privilege in database due to poor configurations</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>Loose authorization rules may allow an attacker to access the {source.Name} . Access should be configured based on least privilege.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure template </Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Loose authorization rules may allow an attacker to access the {source.Name} . Access should be configured based on least privilege.</Value>
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
           <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>( source is '2c422ab1-65ea-4dcf-bd39-02d970063cff' ) and (flow is  'e15962c0-46bd-4035-91d6-f65623dd4187' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>71aafb7b-52db-49b6-af42-5b04b945c006</Id>
-      <ShortTitle>Insider execution of malware</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>{source.Name} may attempt to install and execute malware on the {target.Name}. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>{source.Name} may attempt to install and execute malware on the {target.Name}. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>( source is '2c422ab1-65ea-4dcf-bd39-02d970063cff') and (flow is  'e15962c0-46bd-4035-91d6-f65623dd4187' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>d9fa3163-5bce-43a1-b297-e0d4f92d8195</Id>
-      <ShortTitle>Malicious configuration of the system by insider</ShortTitle>
-      <Category>555172d8-70fc-42bb-9485-01cab71685b3</Category>
-      <RelatedCategory />
-      <Description>{source.Name} may attempt to configure or issue commands to the system with malicious intent. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>{source.Name} may attempt to configure or issue commands to the system with malicious intent. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
         <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.f7e71688-d496-4601-934e-34ef3412f9a2 is 'Yes' </Exclude>
+        <Exclude>flow is '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
       </GenerationFilters>
-      <Id>8c978a92-0ff4-46ab-acd1-3da95e8312c9</Id>
-      <ShortTitle>Unauthorized access due to publicly disclosed vulnerabilities</ShortTitle>
+      <Id>65b9cad7-02ee-4be7-a0b9-3beee76c12cf</Id>
+      <ShortTitle>Unauthorized access to process</ShortTitle>
       <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to exploit publicly disclosed vulnerabilities in the {target.Name}.</Description>
+      <Description>An attacker may attempt to get access to the {target.Name} and subsequently execute malware, steal data. issue harmful commands or misconfigure the {target.Name}. Such access may be obtained by for instance exploiting disclosed or unknown vulnerabilities, remote update functionality, misconfiguration, unused services or features that have not been disabled, lack of input validation (for instance buffer overflow), weak or easily guessable password, otherwise weak authentication mechanisms, or supply chain attacks.</Description>
       <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to exploit publicly disclosed vulnerabilities in the {target.Name}.</Value>
+            <Value>An attacker may attempt to get access to the {target.Name} and subsequently execute malware, steal data. issue harmful commands or misconfigure the {target.Name}. Such access may be obtained by for instance exploiting disclosed or unknown vulnerabilities, remote update functionality, misconfiguration, unused services or features that have not been disabled, lack of input validation (for instance buffer overflow), weak or easily guessable password, otherwise weak authentication mechanisms, or supply chain attacks.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -3247,139 +1518,31 @@
           <Label>Priority</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>High</Value>
           </Values>
           <Description>Priority</Description>
           <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636'  or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0' )  and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>(target.a11c4236-cd31-41fc-bd54-c935d6fd6b00 is 'Yes' ) or flow is  '84976c46-959d-4d2f-8e12-5236df411130'</Exclude>
-      </GenerationFilters>
-      <Id>c4c2aad1-d537-433d-a7bd-a85caea29184</Id>
-      <ShortTitle>Execution of malware</ShortTitle>
-      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to use an exploit the lack of software autentication to execute malware on the {target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to use an exploit the lack of software autentication to execute malware on the {target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4' or source is  '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is 'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow.ef8e305b-eaca-4d0d-a14d-4cc8e7d356ac is 'Yes' )and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.a11c4236-cd31-41fc-bd54-c935d6fd6b00 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>8c2a8db9-d3e1-417b-b72c-3fd4f65ebfcf</Id>
-      <ShortTitle>Unauthorized access due to remote update functionality</ShortTitle>
-      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to obtain elevated privileges on the {target.Name} if it offers remote update functionality without verifying the authenticity of the update.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to obtain elevated privileges on the {target.Name} if it offers remote update functionality without verifying the authenticity of the update.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
           <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
@@ -3426,246 +1589,44 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>( (source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is  'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' )) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.2c7148dc-7746-47ac-8c87-8ada92e3f635 is 'Command&amp;Code' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>f75d82a8-eed2-418c-88f4-6a8c819a2fbb</Id>
-      <ShortTitle>Unauthorized execution of commands</ShortTitle>
-      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to execute unauthorized commands on the {target.Name} if the {target.Name} fails to authenticate the communication.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure Cloud Service Template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to execute unauthorized commands on the {target.Name} if the {target.Name} fails to authenticate the communication.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.69a6c5c8-4f5b-4f95-aab9-c5db3edb88d3 is 'Yes'</Exclude>
-      </GenerationFilters>
-      <Id>0474017a-a394-4b00-9d10-e707d7923783</Id>
-      <ShortTitle>Unauthorized access due to unsused services or features</ShortTitle>
-      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to exploit services or features on the {target.Name} that are enabled but unused. Unused services and features increases the attack surface, and may serve as entry points to the system. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from Azure Template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to exploit services or features on the {target.Name} that are enabled but unused. Unused services and features increases the attack surface, and may serve as entry points to the system. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude>target.68061a2a-8d39-4e3d-84ac-075ae522d8db is 'Yes' or flow is  '84976c46-959d-4d2f-8e12-5236df411130'           </Exclude>
-      </GenerationFilters>
-      <Id>4a71d267-9431-4870-bebd-3e9be785ac35</Id>
-      <ShortTitle>Unauthorized access due to lack of input validation</ShortTitle>
-      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
-      <RelatedCategory />
-      <Description>Lack of input validation may be the root cause of various exploits. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Lack of input validation may be the root cause of various exploits. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>( source is '2c422ab1-65ea-4dcf-bd39-02d970063cff' ) and (flow is  'e15962c0-46bd-4035-91d6-f65623dd4187' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
         <Exclude />
       </GenerationFilters>
-      <Id>56afe44f-1098-4e63-ad90-799bf8c38554</Id>
-      <ShortTitle>Unathorized access due to weak authentication</ShortTitle>
-      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
+      <Id>71aafb7b-52db-49b6-af42-5b04b945c006</Id>
+      <ShortTitle>Insider threat</ShortTitle>
+      <Category>8806aa20-f3cd-4272-902b-3d38e79c7edf</Category>
       <RelatedCategory />
-      <Description>An attakcer may be able to exploit weak authentication procedures, relying on easily guessable credentials, factory set credentials or weak cryptographic keys,  to obtain elevated privileges on the{target.Name}.</Description>
+      <Description>{source.Name} may attempt to install and execute malware, issue harmful commands or configure the {target.Name} in a harmful way.</Description>
       <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attakcer may be able to exploit weak authentication procedures, relying on easily guessable credentials, factory set credentials or weak cryptographic keys,  to obtain elevated privileges on the{target.Name}.</Value>
+            <Value>{source.Name} may attempt to install and execute malware, issue harmful commands or configure the {target.Name} in a harmful way.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -3682,78 +1643,24 @@
           <AttributeType>1</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
+          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
+          <Label>Source</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{source.Name}</Value>
           </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>( target is '285d9da0-4646-4c3f-9b00-ca0ddac19e07' ) and (flow crosses '473afa23-e07b-4472-bceb-9b3ced511071' or flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>74ba8944-fa5f-4ceb-bd15-cc5acbd6a473</Id>
-      <ShortTitle>Remote control of actuator</ShortTitle>
-      <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to gain control of the {target.Name}, possibly threatening power availability. </Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to gain control of the {target.Name}, possibly threatening power availability. </Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
+          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
+          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
+          <Label>Target</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value xsi:nil="true" />
+            <Value>{target.Name}</Value>
           </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>3710a5b5-2f86-4328-8b46-90b69e9871c4</Name>
-          <Label>Impact</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>3710a5b5-2f86-4328-8b46-90b69e9871c4</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Name>
-          <Label>Probability</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Id>c9deb6d2-7e3e-4728-8303-5e66f4d729cb</Id>
-          <AttributeType>1</AttributeType>
+          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
+          <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
