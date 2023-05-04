@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.2.0.95" author="LAPTOP-GTP4U7EO\larsf" />
+  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.2.0.103" author="LAPTOP-GTP4U7EO\larsf" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -833,14 +833,14 @@
       <ShortTitle>BGP hijacking</ShortTitle>
       <Category>66d93b58-6d13-4431-aa06-65906cc551f0</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which are not part of the attacker's network. Additionally, an attacker may attempt to hijack communication by altering the network path, so that the best path appears to go through the attacker's network. Both attacks can cause packet to te rerouted to the attackers network. </Description>
+      <Description>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which are not part of the attacker's network. Additionally, an attacker may attempt to hijack communication by altering the network path, so that the best path appears to go through the attacker's network. Both attacks can cause packet to be rerouted to the attackers network. </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which are not part of the attacker's network. Additionally, an attacker may attempt to hijack communication by altering the network path, so that the best path appears to go through the attacker's network. Both attacks can cause packet to te rerouted to the attackers network. </Value>
+            <Value>An attacker may attempt to hijack IP packets by advertising IP prefixes or subprefixes which are not part of the attacker's network. Additionally, an attacker may attempt to hijack communication by altering the network path, so that the best path appears to go through the attacker's network. Both attacks can cause packet to be rerouted to the attackers network. </Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1113,14 +1113,14 @@
       <ShortTitle>Repudiation of operational data</ShortTitle>
       <Category>7f8201f1-2764-4209-87d7-99780e2b653f</Category>
       <RelatedCategory />
-      <Description>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. This might in turn hinder resoration and forensic efforts. </Description>
+      <Description>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. This might in turn hinder restoration and forensic efforts. </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. This might in turn hinder resoration and forensic efforts. </Value>
+            <Value>An attacker may be able to hide malicious communication if the target or the source does not log communication, or if these logs are tampered with by the attacker. This might in turn hinder restoration and forensic efforts. </Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1221,14 +1221,14 @@
       <ShortTitle>Disclosure of transmitted information</ShortTitle>
       <Category>e0da5e22-f13a-4771-9973-2eb933f28c46</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to learn the content of the infromation transmitted between the {source.Name} and the {target.Name}. This threat is particularly critical if credentials are transmitted in an insecure way.</Description>
+      <Description>An attacker may attempt to learn the content of the information transmitted between the {source.Name} and the {target.Name}. This threat is particularly critical if credentials are transmitted in an insecure way.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to learn the content of the infromation transmitted between the {source.Name} and the {target.Name}. This threat is particularly critical if credentials are transmitted in an insecure way.</Value>
+            <Value>An attacker may attempt to learn the content of the information transmitted between the {source.Name} and the {target.Name}. This threat is particularly critical if credentials are transmitted in an insecure way.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -1501,14 +1501,14 @@
       <ShortTitle>Unauthorized access to process</ShortTitle>
       <Category>3df5fc57-4d60-4e4d-af54-e447c549cdc3</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to get access to the {target.Name} and subsequently execute malware, steal data. issue harmful commands or misconfigure the {target.Name}. Such access may be obtained by for instance exploiting disclosed or unknown vulnerabilities, remote update functionality, misconfiguration, unused services or features that have not been disabled, lack of input validation (for instance buffer overflow), weak or easily guessable password, otherwise weak authentication mechanisms, or supply chain attacks.</Description>
+      <Description>An attacker may attempt to get access to the {target.Name} and subsequently execute malware, steal data, issue harmful commands or misconfigure the {target.Name}. Such access may be obtained by for instance exploiting disclosed or unknown vulnerabilities, remote update functionality, misconfiguration, unused services or features that have not been disabled, lack of input validation (for instance buffer overflow), weak or easily guessable password, otherwise weak authentication mechanisms, or supply chain attacks.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to get access to the {target.Name} and subsequently execute malware, steal data. issue harmful commands or misconfigure the {target.Name}. Such access may be obtained by for instance exploiting disclosed or unknown vulnerabilities, remote update functionality, misconfiguration, unused services or features that have not been disabled, lack of input validation (for instance buffer overflow), weak or easily guessable password, otherwise weak authentication mechanisms, or supply chain attacks.</Value>
+            <Value>An attacker may attempt to get access to the {target.Name} and subsequently execute malware, steal data, issue harmful commands or misconfigure the {target.Name}. Such access may be obtained by for instance exploiting disclosed or unknown vulnerabilities, remote update functionality, misconfiguration, unused services or features that have not been disabled, lack of input validation (for instance buffer overflow), weak or easily guessable password, otherwise weak authentication mechanisms, or supply chain attacks.</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
