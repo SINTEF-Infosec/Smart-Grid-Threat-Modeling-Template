@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.2.0.122" author="LAPTOP-GTP4U7EO\larsf" />
+  <Manifest name="Smart grid" id="84c94f1d-c09e-46a1-bf25-5786592e1e8f" version="2.2.0.127" author="LAPTOP-GTP4U7EO\larsf" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -660,7 +660,7 @@
   <ThreatTypes>
     <ThreatType>
       <GenerationFilters>
-        <Include>(source is [Generic Smart Grid Device] or source is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is [Generic Smart Grid Device] or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4' ) </Include>
+        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or source is '9f37b974-a230-4534-b59d-cf2eeaee42b0' or source is 'fc1ec9f0-ca1a-497c-b31a-98aa99dd80c4') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4' ) </Include>
         <Exclude>flow.1788b37b-42c7-4ae5-8cd8-d01b866ac2f0 is 'Yes'</Exclude>
       </GenerationFilters>
       <Id>85abfe10-724c-4390-8892-bbc6ab43def1</Id>
@@ -772,14 +772,14 @@
       <ShortTitle>Tampering of transmitted data</ShortTitle>
       <Category>a6ad399e-6e9d-4d8e-b710-88dec85b5249</Category>
       <RelatedCategory />
-      <Description>An attacker may attempt to tamper with the communication between the {source.Name} and the {target.Name}. This can happen through a man-in-the-middle attack (T0830).</Description>
+      <Description>An attacker may attempt to tamper with the communication between the {source.Name} and the {target.Name}. This can for instance happen through a man-in-the-middle attack (T0830).</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An attacker may attempt to tamper with the communication between the {source.Name} and the {target.Name}. This can happen through a man-in-the-middle attack (T0830).</Value>
+            <Value>An attacker may attempt to tamper with the communication between the {source.Name} and the {target.Name}. This can for instance happen through a man-in-the-middle attack (T0830).</Value>
           </Values>
           <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
           <AttributeType>0</AttributeType>
@@ -914,8 +914,8 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(source is [Generic Smart Grid Device] and flow is 'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
+        <Include>((source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' and flow is 'a622b89b-40dc-4ede-a95e-32161ab98344')) and ((flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4'))</Include>
+        <Exclude>target is '2514e1bd-30b5-490a-8799-a1c5065cb846' or  target is '2c422ab1-65ea-4dcf-bd39-02d970063cff'</Exclude>
       </GenerationFilters>
       <Id>4b3d4b8e-5694-4837-83c5-19c7bdba5710</Id>
       <ShortTitle>Tampering of device</ShortTitle>
@@ -1009,7 +1009,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(target is [Generic Smart Grid Device] or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.db9d896e-d6f5-48fb-bfe0-252709178dd0 is 'Command&amp;Code' ) and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
+        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is  '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344' and flow.db9d896e-d6f5-48fb-bfe0-252709178dd0 is 'Command&amp;Code' ) and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4' )</Include>
         <Exclude>target.aa7975a6-bc55-419f-871d-f1b49a4a4ca4 is 'Yes'</Exclude>
       </GenerationFilters>
       <Id>8c9c67d3-c85c-4d33-bea7-c28ab582383b</Id>
@@ -1093,7 +1093,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(target is '7cdab519-6c8a-4e92-82a1-abd623f63f4e' and source is [Sensor Device] ) and (flow.c2b66779-2d22-4416-abb2-d3bb687edd19 is 'Yes' )  and ( flow is 'a622b89b-40dc-4ede-a95e-32161ab98344' and (flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' ) )</Include>
+        <Include>(target is '7cdab519-6c8a-4e92-82a1-abd623f63f4e' and source is 'a79cebe5-1bb6-42ec-a94e-231aebd82c5f' ) and (flow.c2b66779-2d22-4416-abb2-d3bb687edd19 is 'Yes' )  and ( flow is 'a622b89b-40dc-4ede-a95e-32161ab98344' and (flow crosses '1e9b8b9a-34f4-4089-8edb-e162a49838e4' ) )</Include>
         <Exclude>flow.edb23fc2-fcf4-4d19-9d12-71887aa3beda is 'Yes'</Exclude>
       </GenerationFilters>
       <Id>5679f0c4-c379-410f-86eb-0839804700c0</Id>
@@ -1221,7 +1221,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>target is [Generic Smart Grid Device]</Include>
+        <Include>target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
         <Exclude>target is '4292ff80-023e-40c7-ab82-b345f3c215c3'</Exclude>
       </GenerationFilters>
       <Id>5685e874-14a7-4b4c-8b90-4cb5373a0472</Id>
@@ -1276,7 +1276,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>( source is '2514e1bd-30b5-490a-8799-a1c5065cb846' and target is  [Generic Smart Grid Device] ) and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>( source is '2514e1bd-30b5-490a-8799-a1c5065cb846' and target is  '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' ) and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
         <Exclude />
       </GenerationFilters>
       <Id>12065e30-4034-4ef7-8a6c-f5d4ecdf906f</Id>
@@ -1394,7 +1394,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(source is [Generic Smart Grid Device]) and (target is [Generic Smart Grid Device] ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>(source is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636') and (target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' ) and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
         <Exclude />
       </GenerationFilters>
       <Id>19dd768b-755d-4109-9bf8-99776aecc281</Id>
@@ -1523,71 +1523,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>(target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
-        <Exclude />
-      </GenerationFilters>
-      <Id>0ec3d149-3a01-4787-b8f5-3ebf8ce261a5</Id>
-      <ShortTitle>Denial of service of data store</ShortTitle>
-      <Category>bfd1f6ed-1b06-4216-9c7f-0fe3eb3329f6</Category>
-      <RelatedCategory />
-      <Description>An attacker may attempt to prevents access to the {target.Name}.</Description>
-      <PropertiesMetaData>
-        <ThreatMetaDatum>
-          <Name>UserThreatShortDescription</Name>
-          <Label>Short Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>Adapted from the default template</Value>
-          </Values>
-          <Id>06eab29d-82f7-4208-b59f-5c90c0d8cf9d</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>UserThreatDescription</Name>
-          <Label>Description</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>An attacker may attempt to prevents access to the {target.Name}.</Value>
-          </Values>
-          <Id>e7d798f2-c148-4f46-b287-7227aebda703</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>Priority</Name>
-          <Label>Priority</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value xsi:nil="true" />
-          </Values>
-          <Description>Priority</Description>
-          <Id>e6e3b782-a2f7-46dc-8b89-186b4eeebc47</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Name>
-          <Label>Source</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>{source.Name}</Value>
-          </Values>
-          <Id>dd034c04-f4c1-4c93-a2a4-f274a99456fa</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
-          <Name>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Name>
-          <Label>Target</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>{target.Name}</Value>
-          </Values>
-          <Id>6dc176ea-7f19-4fc8-b1cf-bc26f8984bf0</Id>
-          <AttributeType>0</AttributeType>
-        </ThreatMetaDatum>
-      </PropertiesMetaData>
-    </ThreatType>
-    <ThreatType>
-      <GenerationFilters>
-        <Include>(target is [Generic Smart Grid Device] or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
+        <Include>(target is '67ef6a3a-25f1-4ddb-8c02-b2b201cd3636' or target is '9f37b974-a230-4534-b59d-cf2eeaee42b0') and (flow is  'a622b89b-40dc-4ede-a95e-32161ab98344') and (flow crosses  '1e9b8b9a-34f4-4089-8edb-e162a49838e4')</Include>
         <Exclude />
       </GenerationFilters>
       <Id>65b9cad7-02ee-4be7-a0b9-3beee76c12cf</Id>
